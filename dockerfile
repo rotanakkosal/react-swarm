@@ -13,8 +13,8 @@ RUN npm install
 # Copy the rest of your app's source code
 COPY . .
 
-# Build your React.JS application
+# Build your React JS application
 RUN npm run build
 
-# Run React.JS Project
+# Run React JS Project
 CMD ["npm", "start"]
