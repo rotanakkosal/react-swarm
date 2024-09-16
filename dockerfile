@@ -5,7 +5,7 @@ FROM node:20.5.0 AS nextjs-build
 WORKDIR /app
 
 # Copy package.json and yarn.lock files
-COPY package.lock ./
+COPY package.json ./
 
 # Install dependencies using Yarn
 RUN npm install
