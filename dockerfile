@@ -5,16 +5,16 @@ FROM node:20.5.0 AS nextjs-build
 WORKDIR /app
 
 # Copy package.json and yarn.lock files
-COPY yarn.lock ./
+COPY package.lock ./
 
 # Install dependencies using Yarn
-RUN yarn install
+RUN npm install
 
 # Copy the rest of your app's source code
 COPY . .
 
 # Build your Next.js application
-RUN yarn run build
+RUN npm run build
 
 # Run NextJS Projectr
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
