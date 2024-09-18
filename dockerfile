@@ -1,5 +1,5 @@
 # Use an official Node.js runtime as a parent image
-FROM node:20.5.0 AS nextjs-build
+FROM node:18.19.1 AS nextjs-build
 
 # Set the working directory
 WORKDIR /app
